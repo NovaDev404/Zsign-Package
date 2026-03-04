@@ -23,13 +23,13 @@ let package = Package(
 		),
 	],
 	dependencies: [
-		.package(url: "https://github.com/krzyzanowskim/OpenSSL", from: "3.3.3001")
+		.package(url: "https://github.com/krzyzanowskim/OpenSSL-Package.git", from: "3.6.0000")
 	],
 	targets: [
 		.target(
 			name: "Zsign",
 			dependencies: [
-				.product(name: "OpenSSL", package: "OpenSSL")
+				.product(name: "OpenSSL", package: "OpenSSL-Package")
 			],
 			path: "src",
 			exclude: [
