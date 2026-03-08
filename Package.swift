@@ -29,7 +29,7 @@ let package = Package(
 		.target(
 			name: "Zsign",
 			dependencies: [
-				.product(name: "OpenSSL", package: "OpenSSL-Package")
+				.product(name: "OpenSSL", package: "OpenSSL")
 			],
 			path: "src",
 			exclude: [
